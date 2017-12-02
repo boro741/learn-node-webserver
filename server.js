@@ -34,11 +34,11 @@ app.use((req,res,next) => {
     next();
 });
 
-app.use((req,res,next) => {
-    // Without next() I can put my website in 
-    // Maintenance mode.
-    res.render('maintenance.hbs');
-})
+// app.use((req,res,next) => {
+//     // Without next() I can put my website in 
+//     // Maintenance mode.
+//     res.render('maintenance.hbs');
+// });
 
 app.get('/', (req,res)=>{
     res.render('home.hbs', {
